@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My First Sample Flex</title>
+        <style>
+            body{
+                padding: 2em;
+            }
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background:tomato;
+                font-weight: bold;
+                padding: 10px;
+            }   
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }       
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+            }
+
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarLeftItem{
+                background: gold;
+            }
+
+            .sideBarRightItem{
+                background : hotpink ;
+            }
+
+            .sideBarItem{
+                flex: 1 0 0;
+                border: 0px solid green;
+            }
+
+            .mainContentItem {
+                flex: 3 0px;
+            }
+            .sideBarLeftItem{
+                order: 1;
+            }
+
+            .mainContentItem{
+                order: 2;
+            }
+            
+            .sideBarRightItem{
+                order: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer">
+            <h1>Sample Flexbox</h1>
+        </header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Tacos actually microdosing,pour-over semiotics banjo chicharonnes retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled siracha normore  hashtag polaroid single-origin coffee cold pressed.
+                        PBR&B tattoed trust fund twee, leggings salvia iPhone photo booth health gooth goastrup hamcock.
+                    </p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>Tacos actually microdosing,pour-over semiotics banjo chicharonnes retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled siracha normore  hashtag polaroid single-origin coffee cold pressed.
+                        PBR&B tattoed trust fund twee, leggings salvia iPhone photo booth health gooth goastrup hamcock.
+                    </p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Tacos actually microdosing,pour-over semiotics banjo chicharonnes retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled siracha normore  hashtag polaroid single-origin coffee cold pressed.
+                        PBR&B tattoed trust fund twee, leggings salvia iPhone photo booth health gooth goastrup hamcock.
+                        Tacos actually microdosing,pour-over semiotics banjo chicharonnes retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled siracha normore  hashtag polaroid single-origin coffee cold pressed.
+                        PBR&B tattoed trust fund twee, leggings salvia iPhone photo booth health gooth goastrup hamcock.
+                    </p>
+                </article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem">
+                <div class="center">
+                    <p>Left Side Bar</p>
+                </div>
+            </sidebar>
+            <sidebar class="sideBarItem sideBarRightItem">
+                <div class="center">
+                    <p>Right Side Bar</p>
+                </div>
+            </sidebar>
+        </div>
+
+        <footer class="footerContainer">
+            <h2>footer</h2>
+        </footer>
+    </body>
+</html>
